@@ -1,7 +1,7 @@
 {
   "name": "get-a-got-quote",
   "description": "Get a GoT Quote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Heydar Gerayzade",
   "license": "MIT",
   "dependencies": {
