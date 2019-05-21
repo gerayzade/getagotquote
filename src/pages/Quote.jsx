@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cloneDeep } from 'lodash';
+import FontFaceObserver from 'fontfaceobserver';
 // data
 import data from '../quotes.json';
 
@@ -50,7 +51,10 @@ export default class Quote extends React.Component {
   getNextQuoteId = (id) => id === this.state.quotes.length - 1 ? 0 : id + 1;
   getPrevQuoteId = (id) => id === 0 ? this.state.quotes.length - 1 : id - 1;
   switchToggle = () => this.setState({ toggle: !this.state.toggle });
-  switchLang = (lang) => this.setState({ lang: lang });
+  switchLang = (event, lang) => {
+    event.preventDefault();
+    this.setState({ lang: lang });
+  }
   switchQuote = (next = true) => {
     const newId = next ? this.getNextQuoteId(this.state.id) : this.getPrevQuoteId(this.state.id);
     // hide current quote
@@ -85,6 +89,9 @@ export default class Quote extends React.Component {
   componentWillMount = () => {
     // preload image for the first and its adjoined quotes
     this.handleImagesPreload(this.state.id);
+    // preload fonts
+    const fonts = ['Trajan Pro 3', 'Volantene Script', 'Dothraki Script'];
+    fonts.forEach(font => new FontFaceObserver(font).load());
   }
   componentDidMount = () => {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -100,7 +107,7 @@ export default class Quote extends React.Component {
           <div className={`lang-switch ${this.state.toggle ? 'toggle' : ''}`}>
             <span className="lang-switch-icon" onClick={this.switchToggle}></span>
             {['common', 'valyrian', 'dothraki'].map(lang => 
-              <a href="#0" className={this.state.lang === lang ? 'active' : ''} onClick={() => this.switchLang(lang)} key={lang}>
+              <a href="#0" className={this.state.lang === lang ? 'active' : ''} onClick={(e) => this.switchLang(e, lang)} key={lang}>
                 {lang}
               </a>
             )}
