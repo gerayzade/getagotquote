@@ -1,0 +1,42 @@
+{
+  "name": "get-a-got-quote",
+  "description": "Get a GoT Quote",
+  "version": "1.0.0",
+  "author": "Heydar Gerayzade",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "rellax": "^1.9.1",
+    "sass-loader": "^7.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "rules": {
+      "brace-style": [2, "1tbs"],
+      "indent": [2, 2, { "SwitchCase": 1 }],
+      "semi": [2, "always"]
+    }
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 version"]
+  }
+}
