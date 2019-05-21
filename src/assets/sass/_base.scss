@@ -10,8 +10,10 @@
 
 html {
   overflow-x: hidden;
-  @include screen('desktop') {
-    overflow-y: hidden;
+  &.no-scroll {
+    @include screen('desktop') {
+      overflow-y: hidden;
+    }
   }
 }
 

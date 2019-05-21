@@ -94,6 +94,7 @@ export default class Quote extends React.Component {
     fonts.forEach(font => new FontFaceObserver(font).load());
   }
   componentDidMount = () => {
+    document.documentElement.classList.add('no-scroll');
     document.addEventListener('keydown', this.handleKeyPress);
   }
   render() {

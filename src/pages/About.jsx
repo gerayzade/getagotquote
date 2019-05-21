@@ -12,6 +12,7 @@ export default class About extends React.Component {
     setTimeout(() => this.setState({ show: true }), 150);
   }
   componentDidMount = () => {
+    document.documentElement.classList.remove('no-scroll');
     // small parallax effect
     if(window.innerWidth >= 1112) {
       Rellax('h1 > img', { speed: -5 });

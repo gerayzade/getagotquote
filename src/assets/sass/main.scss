@@ -67,9 +67,6 @@
   &.show {
     opacity: 1;
   }
-  @include screen('desktop') {
-    overflow-y: scroll;
-  }
   @include screen('tablet, mobile') {
     background-size: auto 600px;
     padding-top: 600px;
