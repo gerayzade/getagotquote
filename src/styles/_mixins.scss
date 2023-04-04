@@ -85,6 +85,12 @@
   }
 }
 
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
 // CSS3 Keyframes
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {

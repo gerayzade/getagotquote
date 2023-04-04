@@ -293,16 +293,20 @@ img {
     padding-left: 0;
 
     .character-bg {
-      background-position: 100% 70px;
-      background-size: 100%;
-      background-repeat: no-repeat;
+      @include portrait {
+        background-position: 100% 70px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
     }
 
     &::after,
     &::before {
-      top: 70px;
-      height: 62.5vw;
-      max-height: calc(100vh - 70px);
+      @include portrait {
+        top: 70px;
+        height: 62.5vw;
+        max-height: calc(100vh - 70px);
+      }
     }
 
     &::before {
