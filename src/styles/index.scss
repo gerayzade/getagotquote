@@ -256,9 +256,9 @@ img {
 
     @include position(absolute, top 0 left 0);
     @include box(100%, 100%);
-    @include gradient(rgba(2,2,2,1), transparent, horizontal);
+    @include gradient(#0202025b, transparent, horizontal);
 
-    z-index: 1;
+    z-index: 2;
   }
 
   &::after {
@@ -267,7 +267,7 @@ img {
     @include position(absolute, top 0 left 0);
     @include box(100%, 100%);
 
-    z-index: 2;
+    z-index: 1;
     background-image: url('/images/noisy.png');
   }
 
@@ -296,6 +296,17 @@ img {
       background-position: 100% 70px;
       background-size: 100%;
       background-repeat: no-repeat;
+    }
+
+    &::after,
+    &::before {
+      top: 70px;
+      height: 62.5vw;
+      max-height: calc(100vh - 70px);
+    }
+
+    &::before {
+      @include gradient(transparent, #020202, vertical);
     }
 
     .quote {
@@ -463,7 +474,7 @@ img {
   }
 
   @include screen('mobile') {
-    bottom: 2em;
-    right: 2em;
+    bottom: 0;
+    right: 1em;
   }
 }
