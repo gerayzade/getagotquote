@@ -34,7 +34,7 @@ img {
 
   padding-top: 100vh;
   background-color: #020202;
-  background-image: url('/images/Drogon.jpg');
+  background-image: url('/images/drogon.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom center;
@@ -105,7 +105,7 @@ img {
         @include position(absolute, top 0 left 0);
         @include box(100%, 100%);
 
-        background-image: url('/images/Kings-Landing.jpg');
+        background-image: url('/images/kings-landing.jpg');
         background-position: center right;
         background-attachment: fixed;
         background-size: cover;
