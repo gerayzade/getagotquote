@@ -1,43 +1,32 @@
 {
-  "name": "get-a-got-quote",
-  "description": "Get a GoT Quote",
-  "version": "1.0.2",
+  "name": "getagotquote",
+  "description": "Get a GOT quote App",
+  "version": "2.0.0",
   "author": "Heydar Gerayzade",
   "license": "MIT",
-  "dependencies": {
-    "fontfaceobserver": "^2.1.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0",
-    "rellax": "^1.9.1",
-    "sass-loader": "^7.1.0"
+  "engines": {
+    "node": "16.18.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "npm run build && next export"
   },
-  "eslintConfig": {
-    "extends": "react-app",
-    "env": {
-      "commonjs": true,
-      "es6": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2018
-    },
-    "rules": {
-      "brace-style": [2, "1tbs"],
-      "indent": [2, 2, { "SwitchCase": 1 }],
-      "semi": [2, "always"]
-    }
+  "dependencies": {
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "fontfaceobserver": "^2.1.0",
+    "lodash": "^4.17.21",
+    "next": "13.0.4",
+    "next-pwa": "^5.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "rellax": "^1.9.1"
   },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 version"]
+  "devDependencies": {
+    "sass": "^1.56.1"
   }
 }

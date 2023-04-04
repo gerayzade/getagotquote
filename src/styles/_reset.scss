@@ -1,11 +1,3 @@
-/* Reset.scss
- * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
- * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-// ERIC MEYER RESET
-// --------------------------------------------------
-
 html, body { margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; }
 table { border-collapse: collapse; border-spacing: 0; }
@@ -18,8 +10,6 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 // --------------------------------------------------
 
 // Display in IE6-9 and FF3
-// -------------------------
-// Source: http://github.com/necolas/normalize.css
 html {
   overflow-y: scroll;
   font-size: 100%;
@@ -32,8 +22,6 @@ a:focus {
 }
 
 // Display in IE6-9 and FF3
-// -------------------------
-// Source: http://github.com/necolas/normalize.css
 article,
 aside,
 details,
@@ -49,7 +37,6 @@ section {
 
 // Display block in IE6-9 and FF3
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 audio,
 canvas,
 video {
@@ -60,14 +47,12 @@ video {
 
 // Prevents modern browsers from displaying 'audio' without controls
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 audio:not([controls]) {
     display: none;
 }
 
 // Prevents sub and sup affecting line-height in all browsers
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 sub,
 sup {
   font-size: 75%;
@@ -84,7 +69,6 @@ sub {
 
 // Img border in a's and image quality
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 img {
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -92,7 +76,6 @@ img {
 
 // Forms
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 
 // Font size in all browsers, margin changes, misc consistency
 button,
@@ -137,7 +120,6 @@ textarea {
 
 // Tables
 // -------------------------
-// Source: http://github.com/necolas/normalize.css
 
 // Remove spacing between table cells
 table {

@@ -1,10 +1,13 @@
-## Get a GoT Quote
+# Get a GOT quote
 
-A fan project by Heydar Gerayzade that generates a random quote from Game of Thrones TV series
-available in Common Tonque, Valyrian and Dothraki languages.
+## Getting Started
 
-## First Steps
+First, run the development server:
 
-`$ npm run start`&nbsp;&nbsp;Runs the app in the development mode.<br/>
-`$ npm run test`&nbsp;&nbsp;&nbsp;&nbsp;Launches the test runner in the interactive watch mode.<br/>
-`$ npm run build`&nbsp;&nbsp;Builds the app for production to the `build` folder.<br/>
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -1,0 +1,22 @@
+{
+  "name": "Game of Thrones: Get a Quote",
+  "short_name": "Get a GoT Quote",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#020202",
+  "background_color": "#020202",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
