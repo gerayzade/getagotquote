@@ -12,7 +12,7 @@ const Layout = ({ children, title }) => {
         <title>{`Game of Thrones: Get a Quote${title ? ` - ${title}` : ''}`}</title>
         <meta
           name="description"
-          content="Game of Thrones"
+          content="A definitive destination for fans of the favorite HBO TV series. Quotes are available not only in Common Tongue, but also in Valyrian and Dothraki languages!"
         />
       </Head>
       <main>
