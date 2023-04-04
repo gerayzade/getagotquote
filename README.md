@@ -1,4 +1,4 @@
-# Get a GOT quote
+# Get a GɵT quote
 
 ## Getting Started
 
