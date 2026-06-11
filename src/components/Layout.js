@@ -1,8 +1,12 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import PropTypes from 'prop-types'
 import { useEffect } from 'react'
+import { SITE_URL } from '~/utils/constants'
 
 const Layout = ({ children, title }) => {
+  const { pathname } = useRouter()
+  const canonical = `${SITE_URL}${pathname}`
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -14,6 +18,7 @@ const Layout = ({ children, title }) => {
           name="description"
           content="A definitive destination for fans of the favorite HBO TV series. Quotes are available not only in Common Tongue, but also in Valyrian and Dothraki languages!"
         />
+        <link rel="canonical" href={canonical} />
       </Head>
       <main>
         {children}
