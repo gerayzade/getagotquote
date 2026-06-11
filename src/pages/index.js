@@ -171,7 +171,7 @@ HomePage.getInitialProps = () => {
     // remove matched image from the list to avoid repetition
     assets = assets.filter(image => !image.includes(match))
     // map image with quote
-    return `/images/got/${match?.slice(2)}`
+    return match ? `/images/got/${match.slice(match.indexOf('season-'))}` : ''
   }
 
   const quotes = data.map(quote => ({
