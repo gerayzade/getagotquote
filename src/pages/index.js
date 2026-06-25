@@ -136,7 +136,7 @@ const HomePage = ({ quotes }) => {
           </button>
           <a
             className="copyright"
-            href="https://gerayzade.az/"
+            href="https://www.h.gerayzade.az/"
             target="_blank"
             rel="noopener noreferrer"
           >
